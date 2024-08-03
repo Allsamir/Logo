@@ -48,7 +48,7 @@ const MobileSlider = () => {
                 Privacy and Policy
               </Link>
             </p>
-            <div className="little-container mt-20 bg-[#1F2833] bg-opacity-70 px-4 py-7 rounded-xl mb-[443px]">
+            <div className="little-container mt-20 bg-[#1F2833] bg-opacity-70 px-4 py-7 rounded-xl mb-[460px]">
               <p className="text-[22px] font-semibold leading-[35px] text-[#fff]">
                 <span className="text-buttonBg">Create Account</span> <br />{" "}
                 Fill in Your Information

@@ -2,6 +2,10 @@
 
 # My Assisment for Scopioe Front-End Developer Internship
 
+# Live Link
+
+[Live Link](https://intern-assisment.web.app)
+
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
