@@ -10,6 +10,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 Make sure you have Node.js and npm (Node Package Manager) installed on your machine. You can download them from [nodejs.org](https://nodejs.org/).
 
+And You should add Your web app's Firebase configuration
+
 ### Installation
 
 1. Clone the repository to your local machine:

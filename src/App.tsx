@@ -1,11 +1,14 @@
 import "./App.css";
-
+import SildeNavbar from "./components/SideNavbar";
 function App() {
   return (
     <>
-      <p className="text-3xl">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="grid grid-cols-6">
+        <div className="col-span-1">
+          <SildeNavbar />
+        </div>
+        <div className="col-span-5">Hi</div>
+      </div>
     </>
   );
 }
