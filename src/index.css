@@ -28,4 +28,5 @@
 
 .navlinks .active {
   background-color: #d4e9ff;
+  font-weight: bold;
 }

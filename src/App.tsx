@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
 import SildeNavbar from "./components/SideNavbar";
 function App() {
   return (
@@ -7,7 +8,9 @@ function App() {
         <div className="col-span-1">
           <SildeNavbar />
         </div>
-        <div className="col-span-5">Hi</div>
+        <div className="col-span-5">
+          <Navbar />
+        </div>
       </div>
     </>
   );

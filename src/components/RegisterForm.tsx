@@ -4,7 +4,9 @@ import SubmitButton from "./SubmitButton";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
 import Swal from "sweetalert2";
+import { updateProfile } from "firebase/auth";
 import useAuth from "../hooks/useAuth";
+import { auth } from "../config/firebase.config";
 type Inputs = {
   name: string;
   email: string;
@@ -35,14 +37,20 @@ const RegisterForm = () => {
     }
     createUser(data.email, data.password)
       .then(() => {
-        Swal.fire({
-          title: "Registration Successful",
-          text: "You have successfully signed up!",
-          icon: "success",
-        }).then(() => {
-          navigate("/");
-        });
-        e?.target.reset();
+        if (auth.currentUser) {
+          updateProfile(auth.currentUser, {
+            displayName: data.name,
+          }).then(() => {
+            Swal.fire({
+              title: "Registration Successful",
+              text: "You have successfully signed up!",
+              icon: "success",
+            }).then(() => {
+              navigate("/");
+            });
+            e?.target.reset();
+          });
+        }
       })
       .catch((error) => {
         const errorCode = error.code;

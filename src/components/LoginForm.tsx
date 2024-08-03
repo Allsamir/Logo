@@ -77,13 +77,13 @@ const LoginForm: React.FC = () => {
           </div>
         </div>
         <p className="text-center my-8 flex items-center sm:text-sm text-xs">
-          <div>
+          <span>
             <img src="Vector 4.svg" alt="" />
-          </div>
+          </span>
           Or Continue with Email
-          <div>
+          <span>
             <img src="Vector 4.svg" alt="" />
-          </div>
+          </span>
         </p>
       </div>
       <div className="form-control">
@@ -112,6 +112,7 @@ const LoginForm: React.FC = () => {
         <button
           onClick={() => setPasswordVisible(!isPasswordVisible)}
           className="absolute right-2 bottom-3"
+          type="button"
         >
           {isPasswordVisible ? <IoEye /> : <IoEyeOffOutline />}
         </button>
